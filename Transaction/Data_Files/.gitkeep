@@ -1,0 +1,10 @@
+# Data Files Directory
+
+This directory is for your Excel transaction files.
+
+Place your bank transaction Excel files here:
+- IBI trans YYYY.xlsx
+- Other bank transaction files
+
+Note: Excel files are excluded from git for privacy.
+The .gitignore file prevents personal financial data from being committed.

@@ -1,0 +1,34 @@
+{
+    "banks": {
+        "IBI": {
+            "column_mappings": {
+                "date": "0",
+                "description": "1",
+                "amount": "4",
+                "balance": "5",
+                "reference": "3"
+            },
+            "date_format": "%d/%m/%Y",
+            "encoding": "utf-8",
+            "skip_rows": 1
+        }
+    },
+    "output": {
+        "default_format": "json",
+        "export_path": "./output/exports/",
+        "processed_path": "./output/processed/",
+        "reports_path": "./output/reports/"
+    },
+    "display": {
+        "max_rows": 100,
+        "date_format": "%Y-%m-%d",
+        "amount_precision": 2,
+        "show_balance": true
+    },
+    "import": {
+        "data_files_path": "./Data_Files/",
+        "supported_extensions": [".xlsx", ".xls"],
+        "auto_detect_bank": true,
+        "backup_imports": true
+    }
+}

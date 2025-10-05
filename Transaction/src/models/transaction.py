@@ -82,14 +82,38 @@ class Transaction(BaseModel):
 
     @property
     def is_buy(self) -> bool:
-        """Check if transaction is a buy order."""
-        buy_types = ['קניה שח', 'קניה מטח', 'קניה חול מטח', 'קניה רצף', 'קניה מעוף', 'Buy']
+        """Check if transaction is a buy order or deposit (adds to position)."""
+        # Exclude dividends and tax transactions (they don't add shares)
+        if 'דיבידנד' in self.transaction_type or 'משיכת מס' in self.transaction_type:
+            return False
+
+        buy_types = [
+            # Regular purchases
+            'קניה שח', 'קניה מטח', 'קניה חול מטח', 'קניה רצף', 'קניה מעוף',
+            # Deposits (shares received into account)
+            'הפקדה', 'הפקדה פקיעה',
+            # Bonuses/benefits
+            'הטבה',
+            # English
+            'Buy'
+        ]
         return any(buy_type in self.transaction_type for buy_type in buy_types)
 
     @property
     def is_sell(self) -> bool:
-        """Check if transaction is a sell order."""
-        sell_types = ['מכירה שח', 'מכירה מטח', 'מכירה חול מטח', 'מכירה רצף', 'מכירה מעוף', 'Sell']
+        """Check if transaction is a sell order or withdrawal (reduces position)."""
+        # Exclude dividends and tax transactions (they don't remove shares)
+        if 'דיבידנד' in self.transaction_type or 'משיכת מס' in self.transaction_type:
+            return False
+
+        sell_types = [
+            # Regular sales
+            'מכירה שח', 'מכירה מטח', 'מכירה חול מטח', 'מכירה רצף', 'מכירה מעוף',
+            # Withdrawals (shares removed from account)
+            'משיכה', 'משיכה פקיעה',
+            # English
+            'Sell'
+        ]
         return any(sell_type in self.transaction_type for sell_type in sell_types)
 
     @property

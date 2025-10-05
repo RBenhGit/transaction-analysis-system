@@ -29,7 +29,13 @@
   "paths": {
     "data_files": "./Data_Files",
     "output_json": "./output/json",
-    "output_reports": "./output/reports"
+    "output_reports": "./output/reports",
+    "actual_portfolio": "C:\\AsusWebStorage\\ran@benhur.co\\MySyncFolder\\RaniStuff\\IBI\\portfolio_trans\\IBI_Current_portfolio.xlsx"
+  },
+  "portfolio": {
+    "enable_actual_positions": true,
+    "default_view": "actual",
+    "show_market_data": true
   },
   "transaction_types": {
     "buy": ["קניה שח", "קניה מט\"ח", "Buy"],

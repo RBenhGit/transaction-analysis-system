@@ -12,12 +12,18 @@ import plotly.graph_objects as go
 from pathlib import Path
 import json
 from datetime import datetime
+import requests
 
 # Import our modules
 from src.input.excel_reader import ExcelReader
 from src.input.file_discovery import FileDiscovery
 from src.json_adapter import JSONAdapter
 from adapters.ibi_adapter import IBIAdapter
+from src.modules.portfolio_dashboard import (
+    PortfolioBuilder,
+    ActualPortfolioLoader,
+    display_portfolio_by_currency
+)
 
 
 # Page configuration
@@ -46,6 +52,23 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
+
+@st.cache_data(ttl=3600)  # Cache for 1 hour
+def get_current_exchange_rate():
+    """Get current ILS/USD exchange rate from API."""
+    try:
+        # Using exchangerate-api.com (free tier)
+        response = requests.get('https://api.exchangerate-api.com/v4/latest/USD', timeout=5)
+        if response.status_code == 200:
+            data = response.json()
+            ils_rate = data['rates'].get('ILS', 3.6)  # Default fallback
+            return ils_rate
+    except Exception as e:
+        print(f"Error fetching exchange rate: {e}")
+
+    # Fallback to approximate rate if API fails
+    return 3.6
 
 
 @st.cache_data
@@ -80,7 +103,7 @@ def main():
 
     # Sidebar
     with st.sidebar:
-        st.image("https://via.placeholder.com/150x50/1f77b4/FFFFFF?text=IBI+Broker", use_column_width=True)
+        st.image("https://via.placeholder.com/150x50/1f77b4/FFFFFF?text=IBI+Broker", use_container_width=True)
         st.markdown("### 📁 File Selection")
 
         # Discover available files
@@ -147,10 +170,33 @@ def main():
             sells = sum(1 for t in transactions if t.is_sell)
             st.metric("Buy/Sell Ratio", f"{buys}/{sells}")
 
+        # Second row: Investment totals
+        st.markdown("---")
+        col1, col2, col3 = st.columns(3)
+
+        # Calculate total invested (buy transactions only)
+        buy_df = df[df['transaction_type'].str.contains('קניה', na=False)]
+
+        # Total in shekels (negative amounts mean money spent)
+        total_invested_nis = abs(buy_df['amount_local_currency'].sum())
+
+        # Get current exchange rate
+        current_rate = get_current_exchange_rate()
+        total_invested_usd = total_invested_nis / current_rate if current_rate > 0 else 0
+
+        with col1:
+            st.metric("💰 Total Invested (NIS)", f"₪{total_invested_nis:,.2f}")
+
+        with col2:
+            st.metric("💵 Total Invested (USD)", f"${total_invested_usd:,.2f}")
+
+        with col3:
+            st.metric("📊 Current Rate (USD→ILS)", f"$1 = ₪{current_rate:.3f}")
+
         st.markdown("---")
 
         # Tabs for different views
-        tab1, tab2, tab3, tab4 = st.tabs(["📋 Transactions", "📊 Analytics", "💹 Securities", "📈 Charts"])
+        tab1, tab2, tab3, tab4, tab5 = st.tabs(["📋 Transactions", "📊 Analytics", "💹 Securities", "📈 Charts", "🏦 Portfolio"])
 
         with tab1:
             st.subheader("Transaction History")
@@ -282,13 +328,26 @@ def main():
             # Balance over time
             st.markdown("#### Account Balance Over Time")
 
-            fig_balance = px.line(
-                df,
-                x='date',
-                y='balance',
-                labels={'date': 'Date', 'balance': 'Balance (NIS)'},
-                title="Account Balance History"
+            # Sort by date to ensure chronological order
+            df_balance = df.sort_values('date')[['date', 'balance']].copy()
+
+            fig_balance = go.Figure()
+            fig_balance.add_trace(go.Scatter(
+                x=df_balance['date'],
+                y=df_balance['balance'],
+                mode='lines',
+                name='Balance',
+                line=dict(color='#1f77b4', width=2)
+            ))
+
+            fig_balance.update_layout(
+                title="Account Balance History",
+                xaxis_title="Date",
+                yaxis_title="Balance (NIS)",
+                hovermode='x unified',
+                showlegend=False
             )
+
             st.plotly_chart(fig_balance, use_container_width=True)
 
             # Fees over time
@@ -303,6 +362,70 @@ def main():
                 title="Transaction Fees"
             )
             st.plotly_chart(fig_fees, use_container_width=True)
+
+        with tab5:
+            st.subheader("Assets Portfolio Dashboard")
+
+            # View toggle
+            portfolio_view = st.radio(
+                "Portfolio View",
+                options=["Actual (IBI)", "Calculated (Transactions)"],
+                horizontal=True,
+                help="Actual: Current positions from broker | Calculated: Derived from transaction history"
+            )
+
+            # Check if transactions are available
+            if transactions is None or len(transactions) == 0:
+                st.warning("⚠️ No transactions loaded. Please select a transaction file from the sidebar.")
+            else:
+                if portfolio_view == "Actual (IBI)":
+                    # Load actual portfolio from IBI file
+                    st.markdown("**Current holdings from IBI broker (actual positions with market values)**")
+
+                    try:
+                        # Path to actual portfolio file
+                        actual_portfolio_path = r"C:\AsusWebStorage\ran@benhur.co\MySyncFolder\RaniStuff\IBI\portfolio_trans\IBI_Current_portfolio.xlsx"
+
+                        # Load actual positions
+                        loader = ActualPortfolioLoader(actual_portfolio_path)
+                        actual_positions_by_currency = loader.load_by_currency()
+
+                        # Display portfolio with market data
+                        display_portfolio_by_currency(actual_positions_by_currency, show_market_data=True)
+
+                        # Show data source info
+                        st.markdown("---")
+                        total_positions = sum(len(positions) for positions in actual_positions_by_currency.values())
+                        st.caption(f"📊 Actual portfolio from IBI broker | {total_positions} positions | Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+                        st.caption(f"📁 Data source: IBI_Current_portfolio.xlsx")
+
+                    except FileNotFoundError:
+                        st.error("⚠️ Actual portfolio file not found. Please ensure IBI_Current_portfolio.xlsx is available.")
+                        st.info("Expected path: C:\\AsusWebStorage\\ran@benhur.co\\MySyncFolder\\RaniStuff\\IBI\\portfolio_trans\\IBI_Current_portfolio.xlsx")
+
+                    except Exception as e:
+                        st.error(f"Error loading actual portfolio: {e}")
+                        st.info("Falling back to calculated portfolio view...")
+
+                        # Fallback to calculated
+                        builder = PortfolioBuilder()
+                        positions_by_currency = builder.build_by_currency(transactions)
+                        display_portfolio_by_currency(positions_by_currency, show_market_data=False)
+
+                else:  # Calculated view
+                    st.markdown("**Current holdings calculated from transaction history**")
+
+                    # Build portfolio from REAL transaction data, separated by currency
+                    builder = PortfolioBuilder()
+                    positions_by_currency = builder.build_by_currency(transactions)
+
+                    # Display portfolio separated by currency (NIS vs USD)
+                    display_portfolio_by_currency(positions_by_currency, show_market_data=False)
+
+                    # Show data source info
+                    st.markdown("---")
+                    st.caption(f"📊 Portfolio calculated from **{len(transactions)} real transactions** | Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+                    st.caption(f"📁 Data source: {selected_file_name}")
 
         # Raw data view
         if show_raw_data:

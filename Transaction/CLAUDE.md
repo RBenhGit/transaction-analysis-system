@@ -1,0 +1,412 @@
+# Transaction Portfolio Dashboard
+
+**GitHub Repository:** https://github.com/RBenhGit/transaction-analysis-system
+
+## Overview
+A modular Python-based portfolio dashboard that imports Excel transaction files, converts them to JSON format through adapters, and displays them in an interactive Streamlit interface. The system follows a linear data flow: Input → Adapter → Visualization → Actions.
+
+## Project Philosophy
+
+### Linear Data Flow
+```
+Excel Files → Adapter → JSON → Streamlit Display → Actions/Modules
+```
+
+### Core Principles
+- **Modular Design**: Each component has a single responsibility
+- **No Duplication**: Universal files for input, display, calculations, and output
+- **Clear Structure**: Easy-to-understand folder organization
+- **Separation of Concerns**: Input, processing, and visualization are independent
+
+## Project Structure
+
+```
+Transaction/
+├── CLAUDE.md                      # This file - project documentation
+├── app.py                         # Streamlit main application entry point
+├── requirements.txt               # Python dependencies
+├── config.json                    # Configuration file
+├── .gitignore                     # Git ignore patterns
+│
+├── Data_Files/                    # Raw Excel transaction files (input)
+│   ├── IBI trans 2022.xlsx
+│   ├── IBI trans 2023.xlsx
+│   └── IBI trans 2024.xlsx
+│
+├── src/                           # Core source code
+│   ├── __init__.py
+│   ├── input/                     # Input data handling
+│   │   ├── __init__.py
+│   │   ├── excel_reader.py        # Universal Excel file reader
+│   │   └── file_discovery.py     # Automatic file discovery
+│   │
+│   ├── adapters/                  # Data transformation layer
+│   │   ├── __init__.py
+│   │   ├── base_adapter.py        # Abstract base adapter
+│   │   ├── ibi_adapter.py         # IBI bank adapter
+│   │   └── json_schema.py         # JSON schema definitions
+│   │
+│   ├── models/                    # Data models
+│   │   ├── __init__.py
+│   │   ├── transaction.py         # Transaction model
+│   │   └── portfolio.py           # Portfolio model
+│   │
+│   ├── visualization/             # Display components
+│   │   ├── __init__.py
+│   │   ├── dashboard.py           # Main dashboard layout
+│   │   ├── transaction_view.py    # Transaction display
+│   │   ├── charts.py              # Chart components
+│   │   └── filters.py             # Filter components
+│   │
+│   ├── output/                    # Output and export
+│   │   ├── __init__.py
+│   │   ├── json_writer.py         # JSON export
+│   │   └── report_generator.py    # Report generation
+│   │
+│   └── modules/                   # Action modules (future extensions)
+│       ├── __init__.py
+│       ├── analytics/             # Analytics module
+│       ├── reporting/             # Reporting module
+│       └── export/                # Export module
+│
+├── output/                        # Generated output files
+│   ├── json/                      # Converted JSON files
+│   └── reports/                   # Generated reports
+│
+└── tests/                         # Unit tests
+    ├── __init__.py
+    ├── test_adapters.py
+    └── test_models.py
+```
+
+## Standard JSON Schema
+
+All transaction data is converted to this universal JSON format:
+
+```json
+{
+  "metadata": {
+    "source_file": "IBI trans 2024.xlsx",
+    "bank": "IBI",
+    "import_timestamp": "2025-01-15T10:30:00",
+    "total_transactions": 150,
+    "date_range": {
+      "start": "2024-01-01",
+      "end": "2024-12-31"
+    }
+  },
+  "transactions": [
+    {
+      "id": "unique-transaction-id",
+      "date": "2024-01-15",
+      "transaction_type": "קניה שח",
+      "security_name": "Apple Inc",
+      "security_symbol": "AAPL",
+      "quantity": 10.0,
+      "execution_price": 150.50,
+      "currency": "$",
+      "transaction_fee": 5.00,
+      "additional_fees": 0.50,
+      "amount_foreign_currency": 1505.00,
+      "amount_local_currency": -5520.00,
+      "balance": 45000.00,
+      "capital_gains_tax_estimate": 0.00,
+      "bank": "IBI",
+      "account": "123-456789"
+    }
+  ]
+}
+```
+
+## IBI Bank Adapter - Complete Field Mapping
+
+The IBI adapter supports **securities trading accounts** with 13 fields:
+
+| # | English Name | Hebrew Name | Data Type | Description |
+|---|--------------|-------------|-----------|-------------|
+| 1 | date | תאריך | Date | Transaction date (DD/MM/YYYY) |
+| 2 | transaction_type | סוג פעולה | String | Buy/Sell/Tax/etc (e.g., "קניה שח", "מכירה שח") |
+| 3 | security_name | שם נייר | String | **Stock/Asset name** (e.g., "Apple Inc", "מס ששולם") |
+| 4 | security_symbol | מס' נייר / סימבול | String | Security number or symbol (e.g., "AAPL", "9993983") |
+| 5 | quantity | כמות | Float | Number of shares/units |
+| 6 | execution_price | שער ביצוע | Float | Price per share/unit |
+| 7 | currency | מטבע | String | Currency symbol (e.g., "$", "₪") |
+| 8 | transaction_fee | עמלת פעולה | Float | Transaction commission |
+| 9 | additional_fees | עמלות נלוות | Float | Additional charges |
+| 10 | amount_foreign_currency | תמורה במט"ח | Float | Total amount in foreign currency |
+| 11 | amount_local_currency | תמורה בשקלים | Float | Total amount in local currency (NIS) |
+| 12 | balance | יתרה שקלית | Float | Account balance in NIS after transaction |
+| 13 | capital_gains_tax_estimate | אומדן מס רווחי הון | Float | Estimated capital gains tax |
+
+### Example IBI Transaction
+```json
+{
+  "date": "2024-12-31",
+  "transaction_type": "קניה שח",
+  "security_name": "Apple Inc",
+  "security_symbol": "AAPL",
+  "quantity": 10,
+  "execution_price": 150.50,
+  "currency": "$",
+  "transaction_fee": 5.00,
+  "additional_fees": 0.50,
+  "amount_foreign_currency": 1505.00,
+  "amount_local_currency": -5520.00,
+  "balance": 45000.00,
+  "capital_gains_tax_estimate": 0.00
+}
+```
+
+## Installation & Setup
+
+### Prerequisites
+- Python 3.8 or higher
+- pip package manager
+
+### Installation Steps
+
+1. **Clone the repository** (or navigate to project directory)
+```bash
+cd C:\AsusWebStorage\ran@benhur.co\MySyncFolder\python\investingAnalysis\Transaction
+```
+
+2. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+3. **Run the application**
+```bash
+streamlit run app.py
+```
+
+The dashboard will open automatically in your default browser at `http://localhost:8501`
+
+## Usage
+
+### Basic Workflow
+
+1. **Launch Application**
+   - Run `streamlit run app.py`
+   - Dashboard opens in browser
+
+2. **Automatic File Discovery**
+   - System scans `Data_Files/` folder
+   - Displays all available Excel files
+
+3. **Select and Load**
+   - Choose Excel file(s) from dropdown
+   - Click "Load Transactions"
+
+4. **View Dashboard**
+   - See transaction table
+   - Apply filters (date range, category, amount)
+   - View summary statistics
+   - Explore charts and visualizations
+
+5. **Export (Optional)**
+   - Export to JSON format
+   - Generate reports
+   - Download filtered data
+
+### Streamlit Interface Features
+
+- **File Selector**: Choose which Excel files to load
+- **Transaction Table**: Scrollable, sortable transaction list
+- **Filters**: 
+  - Date range picker
+  - Category filter
+  - Amount range slider
+  - Search by description
+- **Summary Cards**:
+  - Total income
+  - Total expenses
+  - Net balance
+  - Transaction count
+- **Visualizations**:
+  - Monthly spending trends
+  - Category breakdown (pie chart)
+  - Income vs expenses over time
+  - Balance timeline
+
+## Configuration
+
+Edit `config.json` to customize settings:
+
+```json
+{
+  "banks": {
+    "IBI": {
+      "column_mapping": {
+        "date": "תאריך",
+        "description": "תיאור",
+        "amount": "סכום",
+        "balance": "יתרה"
+      },
+      "date_format": "%d/%m/%Y",
+      "encoding": "utf-8"
+    }
+  },
+  "display": {
+    "rows_per_page": 50,
+    "date_format": "%Y-%m-%d",
+    "currency_symbol": "₪"
+  },
+  "paths": {
+    "data_files": "./Data_Files",
+    "output_json": "./output/json",
+    "output_reports": "./output/reports"
+  }
+}
+```
+
+## Development Guide
+
+### Adding a New Bank Adapter
+
+1. Create new adapter file: `src/adapters/[bank_name]_adapter.py`
+
+```python
+from src.adapters.base_adapter import BaseAdapter
+from src.models.transaction import Transaction
+
+class NewBankAdapter(BaseAdapter):
+    def __init__(self):
+        super().__init__("NewBank")
+    
+    def transform(self, df):
+        # Transform DataFrame to Transaction objects
+        transactions = []
+        for _, row in df.iterrows():
+            transaction = Transaction(
+                date=self._parse_date(row['DateColumn']),
+                description=row['DescColumn'],
+                amount=float(row['AmountColumn']),
+                balance=float(row['BalanceColumn'])
+            )
+            transactions.append(transaction)
+        return transactions
+```
+
+2. Register in `config.json`
+3. Add to adapter factory in `src/adapters/__init__.py`
+
+### Adding New Visualizations
+
+1. Create component in `src/visualization/`
+2. Import in `src/visualization/dashboard.py`
+3. Add to dashboard layout
+
+### Adding Action Modules
+
+1. Create module directory in `src/modules/`
+2. Implement module interface
+3. Register in modules system
+
+## Code Standards
+
+- **Naming**: Use `snake_case` for files and functions
+- **Docstrings**: All functions must have docstrings
+- **Type Hints**: Use type hints for function parameters
+- **Testing**: Write tests for all new features
+- **No Duplication**: Reuse existing universal files
+
+## Data Flow Details
+
+### 1. Input Layer (`src/input/`)
+- **Purpose**: Read Excel files from disk
+- **Output**: Raw pandas DataFrame
+- **Universal**: Works with any Excel file structure
+
+### 2. Adapter Layer (`src/adapters/`)
+- **Purpose**: Transform raw data to standard JSON schema
+- **Input**: Raw DataFrame
+- **Output**: Standardized Transaction objects
+- **Bank-Specific**: Each bank has its own adapter
+
+### 3. Model Layer (`src/models/`)
+- **Purpose**: Define data structures
+- **Validation**: Ensure data integrity
+- **Universal**: Standard across all banks
+
+### 4. Visualization Layer (`src/visualization/`)
+- **Purpose**: Display data in Streamlit
+- **Input**: Transaction objects
+- **Output**: Interactive dashboard
+- **Universal**: Works with any transaction data
+
+### 5. Output Layer (`src/output/`)
+- **Purpose**: Export and save processed data
+- **Formats**: JSON, CSV, Excel, PDF reports
+- **Universal**: Standard export formats
+
+### 6. Modules Layer (`src/modules/`)
+- **Purpose**: Extended actions and features
+- **Examples**: Analytics, reporting, predictions
+- **Extensible**: Easy to add new modules
+
+## Features
+
+### Current Features
+✅ Excel file import from `Data_Files/` directory  
+✅ Automatic file discovery  
+✅ IBI bank adapter with Hebrew support  
+✅ JSON schema standardization  
+✅ Streamlit interactive dashboard  
+✅ Transaction table with sorting and filtering  
+✅ Date range filtering  
+✅ Category filtering  
+✅ Amount range filtering  
+✅ Search functionality  
+✅ Summary statistics  
+✅ Monthly trends chart  
+✅ Category breakdown chart  
+✅ Balance timeline  
+✅ JSON export functionality  
+
+### Planned Features
+⬜ Multiple bank support (add more adapters)  
+⬜ Advanced analytics module  
+⬜ Budget tracking  
+⬜ Spending predictions  
+⬜ Receipt attachment support  
+⬜ Multi-account portfolio view  
+⬜ Custom category creation  
+⬜ Recurring transaction detection  
+⬜ PDF report generation  
+⬜ Email notifications  
+
+## Troubleshooting
+
+### Common Issues
+
+**Issue**: Excel file not found  
+**Solution**: Ensure file is in `Data_Files/` directory
+
+**Issue**: Hebrew text appears garbled  
+**Solution**: Check encoding in config.json (should be "utf-8")
+
+**Issue**: Date parsing errors  
+**Solution**: Verify date_format in config.json matches Excel format
+
+**Issue**: Streamlit doesn't start  
+**Solution**: Check if port 8501 is available, or specify different port:
+```bash
+streamlit run app.py --server.port 8502
+```
+
+## Contributing
+
+1. Follow the modular structure strictly
+2. Use universal files (no duplication)
+3. Write clear docstrings
+4. Add tests for new features
+5. Update CLAUDE.md with changes
+
+## License
+
+Internal use for personal financial analysis.
+
+---
+
+**Remember**: This system follows a **linear flow** (Input → Adapter → Visualization → Actions). Keep it simple, modular, and avoid duplication!

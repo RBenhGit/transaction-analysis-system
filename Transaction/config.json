@@ -1,0 +1,61 @@
+{
+  "banks": {
+    "IBI": {
+      "account_type": "securities_trading",
+      "column_mapping": {
+        "date": "תאריך",
+        "transaction_type": "סוג פעולה",
+        "security_name": "שם נייר",
+        "security_symbol": "מס' נייר / סימבול",
+        "quantity": "כמות",
+        "execution_price": "שער ביצוע",
+        "currency": "מטבע",
+        "transaction_fee": "עמלת פעולה",
+        "additional_fees": "עמלות נלוות",
+        "amount_foreign_currency": "תמורה במט\"ח",
+        "amount_local_currency": "תמורה בשקלים",
+        "balance": "יתרה שקלית",
+        "capital_gains_tax_estimate": "אומדן מס רווחי הון"
+      },
+      "date_format": "%d/%m/%Y",
+      "encoding": "utf-8"
+    }
+  },
+  "display": {
+    "rows_per_page": 50,
+    "date_format": "%Y-%m-%d",
+    "currency_symbol": "₪"
+  },
+  "paths": {
+    "data_files": "./Data_Files",
+    "output_json": "./output/json",
+    "output_reports": "./output/reports",
+    "actual_portfolio": "C:\\AsusWebStorage\\ran@benhur.co\\MySyncFolder\\RaniStuff\\IBI\\portfolio_trans\\IBI_Current_portfolio.xlsx"
+  },
+  "portfolio": {
+    "enable_actual_positions": true,
+    "default_view": "actual",
+    "show_market_data": true
+  },
+  "transaction_types": {
+    "buy": ["קניה שח", "קניה מט\"ח", "Buy"],
+    "sell": ["מכירה שח", "מכירה מט\"ח", "Sell"],
+    "dividend": ["דיבידנד", "Dividend"],
+    "fee": ["עמלה", "Fee"],
+    "tax": ["מס", "Tax"],
+    "transfer": ["העברה", "Transfer"]
+  },
+  "categories": {
+    "default_categories": [
+      "stocks",
+      "etf",
+      "bonds",
+      "options",
+      "forex",
+      "commodities",
+      "crypto",
+      "mutual_funds",
+      "other"
+    ]
+  }
+}

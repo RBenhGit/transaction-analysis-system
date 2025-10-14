@@ -12,7 +12,7 @@ from datetime import datetime
 from pathlib import Path
 
 from .models.transaction import Transaction
-from adapters.base_adapter import BaseAdapter
+from src.adapters.base_adapter import BaseAdapter
 
 
 class JSONAdapter:

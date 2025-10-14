@@ -8,9 +8,10 @@ This represents the broker's real-time holdings data.
 import pandas as pd
 from typing import List, Dict
 from pathlib import Path
+from .base_adapter import BaseAdapter
 
 
-class ActualPortfolioAdapter:
+class ActualPortfolioAdapter(BaseAdapter):
     """
     Adapter for reading IBI's actual portfolio positions file.
 
@@ -22,14 +23,17 @@ class ActualPortfolioAdapter:
     - Unrealized P&L
     """
 
-    def __init__(self, file_path: str = None):
+    def __init__(self, file_path: str = None, config: Dict = None):
         """
         Initialize adapter.
 
         Args:
             file_path: Path to IBI portfolio Excel file
+            config: Optional configuration dictionary
         """
+        super().__init__(config)
         self.file_path = file_path
+        self.bank_name = 'IBI'
 
     def get_column_mapping(self) -> Dict[str, str]:
         """

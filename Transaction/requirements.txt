@@ -11,5 +11,9 @@ pydantic==2.5.3
 plotly==5.18.0
 matplotlib==3.8.2
 
+# Market Data
+yfinance>=0.2.66
+requests>=2.31.0
+
 # Utilities
 python-dotenv==1.0.0

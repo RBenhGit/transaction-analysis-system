@@ -18,10 +18,9 @@ import requests
 from src.input.excel_reader import ExcelReader
 from src.input.file_discovery import FileDiscovery
 from src.json_adapter import JSONAdapter
-from adapters.ibi_adapter import IBIAdapter
+from src.adapters.ibi_adapter import IBIAdapter
 from src.modules.portfolio_dashboard import (
     PortfolioBuilder,
-    ActualPortfolioLoader,
     display_portfolio_by_currency
 )
 
@@ -366,66 +365,34 @@ def main():
         with tab5:
             st.subheader("Assets Portfolio Dashboard")
 
-            # View toggle
-            portfolio_view = st.radio(
-                "Portfolio View",
-                options=["Actual (IBI)", "Calculated (Transactions)"],
-                horizontal=True,
-                help="Actual: Current positions from broker | Calculated: Derived from transaction history"
-            )
-
             # Check if transactions are available
             if transactions is None or len(transactions) == 0:
                 st.warning("⚠️ No transactions loaded. Please select a transaction file from the sidebar.")
             else:
-                if portfolio_view == "Actual (IBI)":
-                    # Load actual portfolio from IBI file
-                    st.markdown("**Current holdings from IBI broker (actual positions with market values)**")
+                # Build portfolio from transaction history
+                st.markdown("**Current holdings calculated from transaction history**")
 
-                    try:
-                        # Path to actual portfolio file
-                        actual_portfolio_path = r"C:\AsusWebStorage\ran@benhur.co\MySyncFolder\RaniStuff\IBI\portfolio_trans\IBI_Current_portfolio.xlsx"
-
-                        # Load actual positions
-                        loader = ActualPortfolioLoader(actual_portfolio_path)
-                        actual_positions_by_currency = loader.load_by_currency()
-
-                        # Display portfolio with market data
-                        display_portfolio_by_currency(actual_positions_by_currency, show_market_data=True)
-
-                        # Show data source info
-                        st.markdown("---")
-                        total_positions = sum(len(positions) for positions in actual_positions_by_currency.values())
-                        st.caption(f"📊 Actual portfolio from IBI broker | {total_positions} positions | Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-                        st.caption(f"📁 Data source: IBI_Current_portfolio.xlsx")
-
-                    except FileNotFoundError:
-                        st.error("⚠️ Actual portfolio file not found. Please ensure IBI_Current_portfolio.xlsx is available.")
-                        st.info("Expected path: C:\\AsusWebStorage\\ran@benhur.co\\MySyncFolder\\RaniStuff\\IBI\\portfolio_trans\\IBI_Current_portfolio.xlsx")
-
-                    except Exception as e:
-                        st.error(f"Error loading actual portfolio: {e}")
-                        st.info("Falling back to calculated portfolio view...")
-
-                        # Fallback to calculated
-                        builder = PortfolioBuilder()
-                        positions_by_currency = builder.build_by_currency(transactions)
-                        display_portfolio_by_currency(positions_by_currency, show_market_data=False)
-
-                else:  # Calculated view
-                    st.markdown("**Current holdings calculated from transaction history**")
-
-                    # Build portfolio from REAL transaction data, separated by currency
+                # Build portfolio from transaction data with current prices
+                with st.spinner("Building portfolio and fetching current prices..."):
                     builder = PortfolioBuilder()
-                    positions_by_currency = builder.build_by_currency(transactions)
+                    positions_by_currency = builder.build_by_currency(transactions, fetch_prices=True)
 
-                    # Display portfolio separated by currency (NIS vs USD)
-                    display_portfolio_by_currency(positions_by_currency, show_market_data=False)
+                # Get current exchange rate for proper currency conversion
+                exchange_rate = get_current_exchange_rate()
 
-                    # Show data source info
-                    st.markdown("---")
-                    st.caption(f"📊 Portfolio calculated from **{len(transactions)} real transactions** | Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-                    st.caption(f"📁 Data source: {selected_file_name}")
+                # Display portfolio separated by currency with conversion info
+                display_portfolio_by_currency(
+                    positions_by_currency,
+                    show_market_data=False,
+                    exchange_rate=exchange_rate
+                )
+
+                # Show data source info
+                st.markdown("---")
+                st.caption(f"📊 Portfolio calculated from **{len(transactions)} transactions** | Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+                st.caption(f"📁 Data source: {selected_file_name}")
+                st.caption(f"💱 Exchange rate: $1 = ₪{exchange_rate:.3f}")
+                st.caption(f"📈 Current prices: US stocks from Yahoo Finance (cached 10 min, rate-limited) | TASE stocks: not available")
 
         # Raw data view
         if show_raw_data:

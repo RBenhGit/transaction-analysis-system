@@ -5,9 +5,14 @@ This module defines the Transaction model for securities trading transactions.
 Supports complete IBI broker format with all 13 fields.
 """
 
+import logging
 from datetime import datetime
 from typing import Optional
 from pydantic import BaseModel, Field
+from .transaction_classifier import ClassifierFactory, TransactionCategory
+
+# Configure logging for transaction classification
+logger = logging.getLogger(__name__)
 
 
 class Transaction(BaseModel):
@@ -58,6 +63,15 @@ class Transaction(BaseModel):
             datetime: lambda v: v.strftime('%Y-%m-%d')
         }
 
+    def _get_classifier(self):
+        """Get appropriate classifier for this transaction's broker."""
+        try:
+            return ClassifierFactory.get_classifier(self.bank)
+        except ValueError:
+            # Fallback to IBI classifier if broker not found
+            logger.warning(f"No classifier found for broker '{self.bank}', using IBI classifier")
+            return ClassifierFactory.get_classifier('IBI')
+
     def to_dict(self) -> dict:
         """Convert transaction to dictionary with all fields."""
         return {
@@ -82,54 +96,108 @@ class Transaction(BaseModel):
 
     @property
     def is_buy(self) -> bool:
-        """Check if transaction is a buy order or deposit (adds to position)."""
-        # Exclude dividends and tax transactions (they don't add shares)
-        if 'דיבידנד' in self.transaction_type or 'משיכת מס' in self.transaction_type:
-            return False
+        """
+        Check if transaction is a buy order or deposit (adds to position).
 
-        buy_types = [
-            # Regular purchases
-            'קניה שח', 'קניה מטח', 'קניה חול מטח', 'קניה רצף', 'קניה מעוף',
-            # Deposits (shares received into account)
-            'הפקדה', 'הפקדה פקיעה',
-            # Bonuses/benefits
-            'הטבה',
-            # English
-            'Buy'
-        ]
-        return any(buy_type in self.transaction_type for buy_type in buy_types)
+        Uses broker-specific classifier for classification logic.
+
+        Returns:
+            True if transaction adds shares to position
+        """
+        classifier = self._get_classifier()
+        return classifier.is_buy(self.transaction_type)
 
     @property
     def is_sell(self) -> bool:
-        """Check if transaction is a sell order or withdrawal (reduces position)."""
-        # Exclude dividends and tax transactions (they don't remove shares)
-        if 'דיבידנד' in self.transaction_type or 'משיכת מס' in self.transaction_type:
-            return False
+        """
+        Check if transaction is a sell order or withdrawal (reduces position).
 
-        sell_types = [
-            # Regular sales
-            'מכירה שח', 'מכירה מטח', 'מכירה חול מטח', 'מכירה רצף', 'מכירה מעוף',
-            # Withdrawals (shares removed from account)
-            'משיכה', 'משיכה פקיעה',
-            # English
-            'Sell'
-        ]
-        return any(sell_type in self.transaction_type for sell_type in sell_types)
+        Uses broker-specific classifier for classification logic.
+
+        Returns:
+            True if transaction removes shares from position
+        """
+        classifier = self._get_classifier()
+        return classifier.is_sell(self.transaction_type)
 
     @property
     def is_dividend(self) -> bool:
-        """Check if transaction is a dividend."""
-        return 'דיבידנד' in self.transaction_type or 'Dividend' in self.transaction_type
+        """Check if transaction is a dividend payment."""
+        classifier = self._get_classifier()
+        return classifier.is_dividend(self.transaction_type)
 
     @property
     def is_fee(self) -> bool:
-        """Check if transaction is a fee."""
-        return 'עמלה' in self.transaction_type or 'Fee' in self.transaction_type or 'דמי' in self.transaction_type
+        """Check if transaction is a fee or handling charge."""
+        classifier = self._get_classifier()
+        return classifier.is_fee(self.transaction_type)
 
     @property
     def is_tax(self) -> bool:
         """Check if transaction is tax-related."""
-        return 'מס' in self.transaction_type or 'Tax' in self.transaction_type
+        classifier = self._get_classifier()
+        return classifier.is_tax(self.transaction_type)
+
+    @property
+    def is_interest(self) -> bool:
+        """Check if transaction is interest payment."""
+        classifier = self._get_classifier()
+        return classifier.is_interest(self.transaction_type)
+
+    @property
+    def is_cash_transfer(self) -> bool:
+        """Check if transaction is a cash transfer."""
+        classifier = self._get_classifier()
+        return classifier.is_cash_transfer(self.transaction_type)
+
+    @property
+    def transaction_category(self) -> str:
+        """
+        Categorize transaction into standard category.
+
+        Returns one of:
+        - 'buy': Purchase or deposit of shares
+        - 'sell': Sale or withdrawal of shares
+        - 'dividend': Dividend payment
+        - 'tax': Tax payment
+        - 'fee': Fee or commission
+        - 'interest': Interest payment
+        - 'transfer': Cash transfer
+        - 'other': Unclassified transaction type
+        """
+        classifier = self._get_classifier()
+        category = classifier.categorize(self.transaction_type)
+        return category.value
+
+    def get_classification_info(self) -> dict:
+        """
+        Get comprehensive classification information for debugging.
+
+        Returns:
+            Dictionary with all classification flags and category
+        """
+        classifier = self._get_classifier()
+        return classifier.get_classification_info(self.transaction_type)
+
+    def log_if_unclassified(self):
+        """
+        Log warning if transaction type is not properly classified.
+
+        This helps identify transaction types that may need to be added
+        to the classification logic.
+        """
+        category = self.transaction_category
+
+        if category == 'other':
+            logger.warning(
+                f"Unclassified transaction type: '{self.transaction_type}' | "
+                f"Security: {self.security_name} ({self.security_symbol}) | "
+                f"Date: {self.date.strftime('%Y-%m-%d')} | "
+                f"Quantity: {self.quantity} | "
+                f"Amount (NIS): {self.amount_local_currency}"
+            )
+            return True
+        return False
 
     @property
     def total_cost(self) -> float:

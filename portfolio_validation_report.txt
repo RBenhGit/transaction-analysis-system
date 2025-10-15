@@ -1,0 +1,117 @@
+================================================================================
+PORTFOLIO VALIDATION REPORT
+================================================================================
+
+SUMMARY
+--------------------------------------------------------------------------------
+Status: ❌ FAILED
+Total Calculated Positions: 22
+Total Actual Positions: 22
+Matched Positions: 0
+Discrepancies Found: 31
+  - Critical: 0
+  - High: 31
+  - Medium: 0
+  - Low: 0
+
+⚠️ Validation WARNING: 0/22 positions matched, 31 issues found (no critical). Review recommended.
+
+DISCREPANCIES
+--------------------------------------------------------------------------------
+
+HIGH (31):
+
+  [missing_in_actual] מזרחי טפחות (695437)
+    Position exists in calculated portfolio (93.00 shares) but not found in broker statement
+
+  [missing_in_actual] מיחשוב ישר קב (507012)
+    Position exists in calculated portfolio (64.00 shares) but not found in broker statement
+
+  [missing_in_actual] מטריקס (445015)
+    Position exists in calculated portfolio (209.00 shares) but not found in broker statement
+
+  [missing_in_actual] סקופ (288019)
+    Position exists in calculated portfolio (139.00 shares) but not found in broker statement
+
+  [missing_in_actual] J.P. MORGAN(JPM (JPM)
+    Position exists in calculated portfolio (22.00 shares) but not found in broker statement
+
+  [missing_in_actual] MICROSOFT(MSFT) (MSFT)
+    Position exists in calculated portfolio (25.00 shares) but not found in broker statement
+
+  [missing_in_actual] INT'L BUSI(IBM) (IBM)
+    Position exists in calculated portfolio (11.00 shares) but not found in broker statement
+
+  [missing_in_actual] B USD/ILS 3.450 (99028)
+    Position exists in calculated portfolio (8100.35 shares) but not found in broker statement
+
+  [missing_in_actual] MAIN STREE(MAIN (MAIN)
+    Position exists in calculated portfolio (52.00 shares) but not found in broker statement
+
+  [missing_in_actual] GOOG US (GOOG)
+    Position exists in calculated portfolio (59.00 shares) but not found in broker statement
+
+  [missing_in_actual] NVIDIA(NVDA) (NVDA)
+    Position exists in calculated portfolio (43.00 shares) but not found in broker statement
+
+  [missing_in_actual] TESLA MOT(TSLA) (TSLA)
+    Position exists in calculated portfolio (23.00 shares) but not found in broker statement
+
+  [missing_in_actual] VISA INC (V US) (V)
+    Position exists in calculated portfolio (24.00 shares) but not found in broker statement
+
+  [missing_in_actual] אטראו שוקי הון (1096106)
+    Position exists in calculated portfolio (70.00 shares) but not found in broker statement
+
+  [missing_in_actual] TEXAS PACIF(TPL (TPL)
+    Position exists in calculated portfolio (5.00 shares) but not found in broker statement
+
+  [missing_in_actual] PLTR US (PLTR)
+    Position exists in calculated portfolio (48.00 shares) but not found in broker statement
+
+  [missing_in_actual] SCHG US (SCHG)
+    Position exists in calculated portfolio (33.00 shares) but not found in broker statement
+
+  [missing_in_actual] נקסט ויז'ן (1176593)
+    Position exists in calculated portfolio (177.00 shares) but not found in broker statement
+
+  [missing_in_actual] פמס (315010)
+    Position exists in calculated portfolio (45.00 shares) but not found in broker statement
+
+  [missing_in_actual] LB US (LB)
+    Position exists in calculated portfolio (30.00 shares) but not found in broker statement
+
+  [missing_in_actual] ASML HOL(ASML) (ASML)
+    Position exists in calculated portfolio (11.00 shares) but not found in broker statement
+
+  [missing_in_actual] קווליטאו (1083955)
+    Position exists in calculated portfolio (10.00 shares) but not found in broker statement
+
+  [missing_in_calculated] SCHG US (nan)
+    Position exists in broker statement (33.00 shares) but not in calculated portfolio
+
+  [missing_in_calculated] סקופ (סקופ)
+    Position exists in broker statement (139.00 shares) but not in calculated portfolio
+
+  [missing_in_calculated] פמס (פמס)
+    Position exists in broker statement (45.00 shares) but not in calculated portfolio
+
+  [missing_in_calculated] מטריקס (מטרקס)
+    Position exists in broker statement (209.00 shares) but not in calculated portfolio
+
+  [missing_in_calculated] מיחשוב ישר קב (מחשר)
+    Position exists in broker statement (64.00 shares) but not in calculated portfolio
+
+  [missing_in_calculated] מזרחי טפחות (מזטפ)
+    Position exists in broker statement (93.00 shares) but not in calculated portfolio
+
+  [missing_in_calculated] קווליטאו (קלטו)
+    Position exists in broker statement (10.00 shares) but not in calculated portfolio
+
+  [missing_in_calculated] אטראו שוקי הון (אטרא)
+    Position exists in broker statement (70.00 shares) but not in calculated portfolio
+
+  [missing_in_calculated] נקסט ויז'ן (נקסנ)
+    Position exists in broker statement (177.00 shares) but not in calculated portfolio
+
+================================================================================

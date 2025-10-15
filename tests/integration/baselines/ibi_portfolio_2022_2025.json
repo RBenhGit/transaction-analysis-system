@@ -1,0 +1,505 @@
+{
+  "metadata": {
+    "test_file": "IBI trans 2022-5_10_2025.xlsx",
+    "run_timestamp": "2025-10-15T08:46:03.522530",
+    "total_transactions": 1931,
+    "total_positions": 81
+  },
+  "transaction_categories": {
+    "buy": 833,
+    "interest": 29,
+    "tax": 244,
+    "dividend": 306,
+    "sell": 464,
+    "transfer": 54,
+    "fee": 1
+  },
+  "positions": {
+    "695437": {
+      "quantity": 93.0,
+      "average_cost": 122.9995,
+      "total_invested": 11438.96,
+      "currency": "\u20aa"
+    },
+    "507012": {
+      "quantity": 64.0,
+      "average_cost": 285.7516,
+      "total_invested": 18288.1,
+      "currency": "\u20aa"
+    },
+    "445015": {
+      "quantity": 209.0,
+      "average_cost": 80.6659,
+      "total_invested": 16859.17,
+      "currency": "\u20aa"
+    },
+    "288019": {
+      "quantity": 139.0,
+      "average_cost": 153.9719,
+      "total_invested": 21402.1,
+      "currency": "\u20aa"
+    },
+    "JPM": {
+      "quantity": 22.0,
+      "average_cost": 168.4274,
+      "total_invested": 3705.4,
+      "currency": "$"
+    },
+    "MSFT": {
+      "quantity": 25.0,
+      "average_cost": 316.8725,
+      "total_invested": 7921.81,
+      "currency": "$"
+    },
+    "IBM": {
+      "quantity": 11.0,
+      "average_cost": 157.9781,
+      "total_invested": 1737.76,
+      "currency": "$"
+    },
+    "99028": {
+      "quantity": 8026.35,
+      "average_cost": 3.648,
+      "total_invested": 29279.96,
+      "currency": "\u20aa"
+    },
+    "83972174": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "MAIN": {
+      "quantity": 52.0,
+      "average_cost": 47.255,
+      "total_invested": 2457.26,
+      "currency": "$"
+    },
+    "GOOG": {
+      "quantity": 59.0,
+      "average_cost": 141.7182,
+      "total_invested": 8361.38,
+      "currency": "$"
+    },
+    "84011139": {
+      "quantity": 2.0,
+      "average_cost": 22.5,
+      "total_invested": 45.0,
+      "currency": "\u20aa"
+    },
+    "84047356": {
+      "quantity": 2.0,
+      "average_cost": 152.5,
+      "total_invested": 305.0,
+      "currency": "\u20aa"
+    },
+    "84047315": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84047323": {
+      "quantity": 1.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "5039813": {
+      "quantity": 376.0,
+      "average_cost": 1.0,
+      "total_invested": 376.0,
+      "currency": "\u20aa"
+    },
+    "84083567": {
+      "quantity": 2.0,
+      "average_cost": 3.75,
+      "total_invested": 7.5,
+      "currency": "\u20aa"
+    },
+    "84047588": {
+      "quantity": 4.0,
+      "average_cost": 8.5,
+      "total_invested": 34.0,
+      "currency": "\u20aa"
+    },
+    "84124486": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "NVDA": {
+      "quantity": 43.0,
+      "average_cost": 84.8331,
+      "total_invested": 3647.82,
+      "currency": "$"
+    },
+    "TSLA": {
+      "quantity": 23.0,
+      "average_cost": 210.2882,
+      "total_invested": 4836.63,
+      "currency": "$"
+    },
+    "84184423": {
+      "quantity": 3.0,
+      "average_cost": 4.1667,
+      "total_invested": 12.5,
+      "currency": "\u20aa"
+    },
+    "84161942": {
+      "quantity": 1.0,
+      "average_cost": 152.5,
+      "total_invested": 152.5,
+      "currency": "\u20aa"
+    },
+    "84196948": {
+      "quantity": 4.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84221092": {
+      "quantity": 1.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84231968": {
+      "quantity": 1.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84231596": {
+      "quantity": 1.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84251370": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84252253": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84272988": {
+      "quantity": 1.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84272939": {
+      "quantity": 2.0,
+      "average_cost": 932.5,
+      "total_invested": 1865.0,
+      "currency": "\u20aa"
+    },
+    "84303270": {
+      "quantity": 6.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84303577": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84335199": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84354513": {
+      "quantity": 1.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84378074": {
+      "quantity": 4.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84378090": {
+      "quantity": 3.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84409960": {
+      "quantity": 4.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84409986": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84445618": {
+      "quantity": 8.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84445600": {
+      "quantity": 1.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84487917": {
+      "quantity": 4.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84487834": {
+      "quantity": 1.0,
+      "average_cost": 82.5,
+      "total_invested": 82.5,
+      "currency": "\u20aa"
+    },
+    "84530518": {
+      "quantity": 8.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84530450": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "V": {
+      "quantity": 24.0,
+      "average_cost": 278.256,
+      "total_invested": 6678.14,
+      "currency": "$"
+    },
+    "84573211": {
+      "quantity": 3.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84573286": {
+      "quantity": 4.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84618693": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84673441": {
+      "quantity": 4.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84713635": {
+      "quantity": 1.0,
+      "average_cost": 82.5,
+      "total_invested": 82.5,
+      "currency": "\u20aa"
+    },
+    "84713718": {
+      "quantity": 8.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84743277": {
+      "quantity": 4.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84766070": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84766054": {
+      "quantity": 2.0,
+      "average_cost": 76.5,
+      "total_invested": 153.0,
+      "currency": "\u20aa"
+    },
+    "1096106": {
+      "quantity": 70.0,
+      "average_cost": 54.6393,
+      "total_invested": 3824.75,
+      "currency": "\u20aa"
+    },
+    "TPL": {
+      "quantity": 5.0,
+      "average_cost": 642.6028,
+      "total_invested": 3213.01,
+      "currency": "$"
+    },
+    "84805977": {
+      "quantity": 4.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84833177": {
+      "quantity": 1.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84845098": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84934413": {
+      "quantity": 8.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "84954106": {
+      "quantity": 6.0,
+      "average_cost": 26.5,
+      "total_invested": 159.0,
+      "currency": "\u20aa"
+    },
+    "PLTR": {
+      "quantity": 48.0,
+      "average_cost": 36.7916,
+      "total_invested": 1766.0,
+      "currency": "$"
+    },
+    "85030666": {
+      "quantity": 6.0,
+      "average_cost": 50.5,
+      "total_invested": 303.0,
+      "currency": "\u20aa"
+    },
+    "SCHG": {
+      "quantity": 33.0,
+      "average_cost": 29.4223,
+      "total_invested": 970.94,
+      "currency": "$"
+    },
+    "1176593": {
+      "quantity": 177.0,
+      "average_cost": 46.7199,
+      "total_invested": 8269.42,
+      "currency": "\u20aa"
+    },
+    "315010": {
+      "quantity": 45.0,
+      "average_cost": 145.8767,
+      "total_invested": 6564.45,
+      "currency": "\u20aa"
+    },
+    "LB": {
+      "quantity": 30.0,
+      "average_cost": 70.1193,
+      "total_invested": 2103.58,
+      "currency": "$"
+    },
+    "85217701": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "85365930": {
+      "quantity": 16.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "85399749": {
+      "quantity": 4.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "85425585": {
+      "quantity": 11.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "85490654": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "85467694": {
+      "quantity": 2.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "85521870": {
+      "quantity": 16.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "85593291": {
+      "quantity": 12.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "85628220": {
+      "quantity": 6.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "ASML": {
+      "quantity": 11.0,
+      "average_cost": 682.8518,
+      "total_invested": 7511.37,
+      "currency": "$"
+    },
+    "85644664": {
+      "quantity": 12.0,
+      "average_cost": 15.4583,
+      "total_invested": 185.5,
+      "currency": "\u20aa"
+    },
+    "85715746": {
+      "quantity": 10.0,
+      "average_cost": 0.0,
+      "total_invested": 0.0,
+      "currency": "\u20aa"
+    },
+    "1083955": {
+      "quantity": 10.0,
+      "average_cost": 389.37,
+      "total_invested": 3893.7,
+      "currency": "\u20aa"
+    }
+  }
+}

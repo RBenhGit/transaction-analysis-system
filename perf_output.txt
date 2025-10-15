@@ -1,0 +1,933 @@
+2025-10-15 08:40:27.158 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2025-10-15 08:40:27.160 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2025-10-15 08:40:27.160 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+test_01_excel_loading_performance (__main__.TestIBIPerformance.test_01_excel_loading_performance)
+Test Excel file loading performance. ... ERROR
+test_02_transformation_performance (__main__.TestIBIPerformance.test_02_transformation_performance)
+Test IBI adapter transformation performance. ... INFO:src.adapters.ibi_adapter:Transforming IBI data: 1931 rows
+INFO:src.adapters.ibi_adapter:Adding classifier metadata columns...
+INFO:src.adapters.ibi_adapter:Successfully added all classifier metadata columns
+INFO:src.adapters.ibi_adapter:Successfully transformed 1931 transactions
+ERROR
+test_03_transaction_parsing_performance (__main__.TestIBIPerformance.test_03_transaction_parsing_performance)
+Test transaction parsing to objects performance. ... INFO:src.adapters.ibi_adapter:Transforming IBI data: 1931 rows
+INFO:src.adapters.ibi_adapter:Adding classifier metadata columns...
+INFO:src.adapters.ibi_adapter:Successfully added all classifier metadata columns
+INFO:src.adapters.ibi_adapter:Successfully transformed 1931 transactions
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -21.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -134.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -7.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -8.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 84954106 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 84934413 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -15.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -10.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+ERROR
+test_04_portfolio_building_performance (__main__.TestIBIPerformance.test_04_portfolio_building_performance)
+Test portfolio building performance. ... INFO:src.adapters.ibi_adapter:Transforming IBI data: 1931 rows
+INFO:src.adapters.ibi_adapter:Adding classifier metadata columns...
+INFO:src.adapters.ibi_adapter:Successfully added all classifier metadata columns
+INFO:src.adapters.ibi_adapter:Successfully transformed 1931 transactions
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -21.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -134.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -7.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -8.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 84954106 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 84934413 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -15.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -10.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+ERROR:src.modules.portfolio_dashboard.builder:Currency mismatch for 99028: Currency mismatch for 99028: Position currency is \u20aa, but transaction uses $
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 83972174 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 83972174 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84011139 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84011139 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84047356 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84047315 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84047323 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 5039813 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84083567 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84083567 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84047588 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84124486 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84184423 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84184423 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84161942 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84196948 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84221092 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84231968 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84231596 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84251370 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84252253 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84272988 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84272939 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -12.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303577 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -5.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84335199 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84335199 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84354513 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84378074 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84378074 (have: 0.0, need: 3.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -3.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84378090 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84378090 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -12.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84409960 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84409986 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84409960 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 4.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -9.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445600 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84487917 (have: 0.0, need: 4.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -7.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84487834 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -18.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84530518 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84530518 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84530450 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -18.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84573211 (have: 0.0, need: 3.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84573286 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84573286 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84618693 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -134.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84673441 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84673441 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -21.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84713635 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84713718 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84713718 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84743277 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84743277 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84743277 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84766070 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84766054 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84805977 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84805977 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84833177 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -12.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84845098 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84934413 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84954106 (have: 0.0, need: 3.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -9.0
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -3.0
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85030666 (have: 0.0, need: 3.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85030666 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85030666 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -8.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85217701 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85217701 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85365930 (have: 0.0, need: 16.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85399749 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85425585 (have: 0.0, need: 5.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85425585 (have: 0.0, need: 6.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85490654 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85490654 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85467694 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -16.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85521870 (have: 0.0, need: 10.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85521870 (have: 0.0, need: 6.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -15.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85593291 (have: 0.0, need: 5.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85593291 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85593291 (have: 0.0, need: 6.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85628220 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85628220 (have: 0.0, need: 5.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85644664 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85644664 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85644664 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85644664 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -16.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85715746 (have: 0.0, need: 10.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -18.0
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -5.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85851251 (have: 0.0, need: 5.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85888816 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85922599 (have: 0.0, need: 9.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85922599 (have: 0.0, need: 3.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -10.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85922599 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85922599 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85957637 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85976439 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85976439 (have: 0.0, need: 3.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85976421 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85976421 (have: 0.0, need: 1.0)
+INFO:src.modules.portfolio_dashboard.builder:Portfolio build complete: 1900 transactions processed, 31 skipped, 138 errors, 0 warnings
+ERROR
+test_05_end_to_end_performance (__main__.TestIBIPerformance.test_05_end_to_end_performance)
+Test complete end-to-end workflow performance. ... INFO:src.adapters.ibi_adapter:Transforming IBI data: 1931 rows
+INFO:src.adapters.ibi_adapter:Adding classifier metadata columns...
+INFO:src.adapters.ibi_adapter:Successfully added all classifier metadata columns
+INFO:src.adapters.ibi_adapter:Successfully transformed 1931 transactions
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -21.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -134.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -7.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -8.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 84954106 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 84934413 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -15.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -10.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+ERROR:src.modules.portfolio_dashboard.builder:Currency mismatch for 99028: Currency mismatch for 99028: Position currency is \u20aa, but transaction uses $
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 83972174 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 83972174 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84011139 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84011139 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84047356 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84047315 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84047323 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 5039813 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84083567 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84083567 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84047588 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84124486 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84184423 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84184423 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84161942 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84196948 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84221092 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84231968 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84231596 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84251370 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84252253 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84272988 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84272939 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -12.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303577 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -5.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84335199 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84335199 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84354513 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84378074 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84378074 (have: 0.0, need: 3.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -3.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84378090 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84378090 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -12.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84409960 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84409986 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84409960 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 4.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -9.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445600 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84487917 (have: 0.0, need: 4.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -7.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84487834 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -18.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84530518 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84530518 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84530450 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -18.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84573211 (have: 0.0, need: 3.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84573286 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84573286 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84618693 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -134.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84673441 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84673441 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -21.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84713635 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84713718 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84713718 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84743277 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84743277 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84743277 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84766070 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84766054 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84805977 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84805977 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84833177 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -12.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84845098 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84934413 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84954106 (have: 0.0, need: 3.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -9.0
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -3.0
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85030666 (have: 0.0, need: 3.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85030666 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85030666 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -8.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85217701 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85217701 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85365930 (have: 0.0, need: 16.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85399749 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85425585 (have: 0.0, need: 5.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85425585 (have: 0.0, need: 6.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85490654 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85490654 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85467694 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -16.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85521870 (have: 0.0, need: 10.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85521870 (have: 0.0, need: 6.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -15.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85593291 (have: 0.0, need: 5.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85593291 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85593291 (have: 0.0, need: 6.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85628220 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85628220 (have: 0.0, need: 5.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85644664 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85644664 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85644664 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85644664 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -16.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85715746 (have: 0.0, need: 10.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -18.0
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -5.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85851251 (have: 0.0, need: 5.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85888816 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85922599 (have: 0.0, need: 9.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85922599 (have: 0.0, need: 3.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -10.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85922599 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85922599 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85957637 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85976439 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85976439 (have: 0.0, need: 3.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85976421 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85976421 (have: 0.0, need: 1.0)
+INFO:src.modules.portfolio_dashboard.builder:Portfolio build complete: 1900 transactions processed, 31 skipped, 138 errors, 0 warnings
+ERROR
+test_06_memory_usage (__main__.TestIBIPerformance.test_06_memory_usage)
+Test memory usage during complete workflow. ... INFO:src.adapters.ibi_adapter:Transforming IBI data: 1931 rows
+INFO:src.adapters.ibi_adapter:Adding classifier metadata columns...
+INFO:src.adapters.ibi_adapter:Successfully added all classifier metadata columns
+INFO:src.adapters.ibi_adapter:Successfully transformed 1931 transactions
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -21.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -134.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -7.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -8.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 84954106 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 84934413 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -15.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -10.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+ERROR:src.modules.portfolio_dashboard.builder:Currency mismatch for 99028: Currency mismatch for 99028: Position currency is \u20aa, but transaction uses $
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 83972174 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 83972174 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84011139 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84011139 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84047356 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84047315 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84047323 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 5039813 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84083567 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84083567 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84047588 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84124486 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84184423 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84184423 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84161942 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84196948 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84221092 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84231968 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84231596 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84251370 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84252253 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84272988 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84272939 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -12.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303270 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84303577 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -5.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84335199 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84335199 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84354513 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84378074 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84378074 (have: 0.0, need: 3.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -3.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84378090 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84378090 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -12.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84409960 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84409986 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84409960 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 4.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -9.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445600 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84445618 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84487917 (have: 0.0, need: 4.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -7.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84487834 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -18.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84530518 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84530518 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84530450 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -18.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84573211 (have: 0.0, need: 3.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84573286 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84573286 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84618693 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -134.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84673441 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84673441 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -21.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84713635 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84713718 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84713718 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84743277 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84743277 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84743277 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84766070 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84766054 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84805977 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84805977 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84833177 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -12.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84845098 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84934413 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 84954106 (have: 0.0, need: 3.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -9.0
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -3.0
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85030666 (have: 0.0, need: 3.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85030666 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85030666 (have: 0.0, need: 1.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -8.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85217701 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85217701 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85365930 (have: 0.0, need: 16.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -2.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85399749 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85425585 (have: 0.0, need: 5.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85425585 (have: 0.0, need: 6.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85490654 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85490654 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85467694 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -16.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85521870 (have: 0.0, need: 10.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85521870 (have: 0.0, need: 6.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -15.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85593291 (have: 0.0, need: 5.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85593291 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85593291 (have: 0.0, need: 6.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85628220 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85628220 (have: 0.0, need: 5.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -4.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85644664 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85644664 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85644664 (have: 0.0, need: 2.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85644664 (have: 0.0, need: 2.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -16.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85715746 (have: 0.0, need: 10.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -18.0
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -5.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85851251 (have: 0.0, need: 5.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85888816 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85922599 (have: 0.0, need: 9.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85922599 (have: 0.0, need: 3.0)
+WARNING:src.modules.portfolio_dashboard.builder:Skipping invalid transaction: Transaction validation failed: Negative quantity: -10.0
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85922599 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85922599 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85957637 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85976439 (have: 0.0, need: 4.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85976439 (have: 0.0, need: 3.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85976421 (have: 0.0, need: 1.0)
+ERROR:src.modules.portfolio_dashboard.builder:Insufficient shares to sell: 85976421 (have: 0.0, need: 1.0)
+INFO:src.modules.portfolio_dashboard.builder:Portfolio build complete: 1900 transactions processed, 31 skipped, 138 errors, 0 warnings
+ERROR
+test_multiple_runs_consistency (__main__.TestIBIScalability.test_multiple_runs_consistency)
+Test that performance is consistent across multiple runs. ... INFO:src.adapters.ibi_adapter:Transforming IBI data: 1931 rows
+INFO:src.adapters.ibi_adapter:Adding classifier metadata columns...
+INFO:src.adapters.ibi_adapter:Successfully added all classifier metadata columns
+INFO:src.adapters.ibi_adapter:Successfully transformed 1931 transactions
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -21.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -134.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -7.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -8.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 84954106 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 84934413 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -15.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -10.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+INFO:src.adapters.ibi_adapter:Transforming IBI data: 1931 rows
+INFO:src.adapters.ibi_adapter:Adding classifier metadata columns...
+INFO:src.adapters.ibi_adapter:Successfully added all classifier metadata columns
+INFO:src.adapters.ibi_adapter:Successfully transformed 1931 transactions
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -21.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -134.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -7.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -8.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 84954106 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 84934413 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -15.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -10.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+INFO:src.adapters.ibi_adapter:Transforming IBI data: 1931 rows
+INFO:src.adapters.ibi_adapter:Adding classifier metadata columns...
+INFO:src.adapters.ibi_adapter:Successfully added all classifier metadata columns
+INFO:src.adapters.ibi_adapter:Successfully transformed 1931 transactions
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -21.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -134.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -7.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -8.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 84954106 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 84934413 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -15.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -10.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+INFO:src.adapters.ibi_adapter:Transforming IBI data: 1931 rows
+INFO:src.adapters.ibi_adapter:Adding classifier metadata columns...
+INFO:src.adapters.ibi_adapter:Successfully added all classifier metadata columns
+INFO:src.adapters.ibi_adapter:Successfully transformed 1931 transactions
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -21.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -134.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -7.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -8.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 84954106 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 84934413 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -15.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -10.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+INFO:src.adapters.ibi_adapter:Transforming IBI data: 1931 rows
+INFO:src.adapters.ibi_adapter:Adding classifier metadata columns...
+INFO:src.adapters.ibi_adapter:Successfully added all classifier metadata columns
+INFO:src.adapters.ibi_adapter:Successfully transformed 1931 transactions
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -21.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -134.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -7.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -12.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -9.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -8.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -3.0 for 84954106 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 84934413 (\u05d4\u05d8\u05d1\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -2.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -4.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -5.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -18.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -15.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -10.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+WARNING:src.models.transaction:Buy transaction has negative quantity: -16.0 for 5039813 (\u05d4\u05e4\u05e7\u05d3\u05d4)
+ERROR
+
+======================================================================
+ERROR: test_01_excel_loading_performance (__main__.TestIBIPerformance.test_01_excel_loading_performance)
+Test Excel file loading performance.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\AsusWebStorage\ran@benhur.co\MySyncFolder\python\investingAnalysis\Transaction\tests\integration\test_ibi_performance.py", line 118, in test_01_excel_loading_performance
+    print(f"\n\u2713 Excel loading completed within threshold ({self.THRESHOLDS['excel_load_seconds']}s)")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ranbe\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 2: character maps to <undefined>
+
+======================================================================
+ERROR: test_02_transformation_performance (__main__.TestIBIPerformance.test_02_transformation_performance)
+Test IBI adapter transformation performance.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\AsusWebStorage\ran@benhur.co\MySyncFolder\python\investingAnalysis\Transaction\tests\integration\test_ibi_performance.py", line 142, in test_02_transformation_performance
+    print(f"\n\u2713 Transformation completed within threshold ({self.THRESHOLDS['transform_seconds']}s)")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ranbe\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 2: character maps to <undefined>
+
+======================================================================
+ERROR: test_03_transaction_parsing_performance (__main__.TestIBIPerformance.test_03_transaction_parsing_performance)
+Test transaction parsing to objects performance.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\AsusWebStorage\ran@benhur.co\MySyncFolder\python\investingAnalysis\Transaction\tests\integration\test_ibi_performance.py", line 168, in test_03_transaction_parsing_performance
+    print(f"\n\u2713 Parsing completed within threshold ({self.THRESHOLDS['parse_seconds']}s)")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ranbe\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 2: character maps to <undefined>
+
+======================================================================
+ERROR: test_04_portfolio_building_performance (__main__.TestIBIPerformance.test_04_portfolio_building_performance)
+Test portfolio building performance.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\AsusWebStorage\ran@benhur.co\MySyncFolder\python\investingAnalysis\Transaction\tests\integration\test_ibi_performance.py", line 200, in test_04_portfolio_building_performance
+    print(f"\n\u2713 Portfolio building completed within threshold ({self.THRESHOLDS['portfolio_build_seconds']}s)")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ranbe\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 2: character maps to <undefined>
+
+======================================================================
+ERROR: test_05_end_to_end_performance (__main__.TestIBIPerformance.test_05_end_to_end_performance)
+Test complete end-to-end workflow performance.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\AsusWebStorage\ran@benhur.co\MySyncFolder\python\investingAnalysis\Transaction\tests\integration\test_ibi_performance.py", line 227, in test_05_end_to_end_performance
+    print(f"\n\u2713 End-to-end workflow completed within threshold ({self.THRESHOLDS['total_workflow_seconds']}s)")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ranbe\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 2: character maps to <undefined>
+
+======================================================================
+ERROR: test_06_memory_usage (__main__.TestIBIPerformance.test_06_memory_usage)
+Test memory usage during complete workflow.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\AsusWebStorage\ran@benhur.co\MySyncFolder\python\investingAnalysis\Transaction\tests\integration\test_ibi_performance.py", line 253, in test_06_memory_usage
+    print(f"\n\u2713 Memory usage within threshold ({self.THRESHOLDS['memory_mb']} MB)")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ranbe\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 2: character maps to <undefined>
+
+======================================================================
+ERROR: test_multiple_runs_consistency (__main__.TestIBIScalability.test_multiple_runs_consistency)
+Test that performance is consistent across multiple runs.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\AsusWebStorage\ran@benhur.co\MySyncFolder\python\investingAnalysis\Transaction\tests\integration\test_ibi_performance.py", line 303, in test_multiple_runs_consistency
+    print(f"\n\u2713 Performance is consistent across {num_runs} runs")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ranbe\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 2: character maps to <undefined>
+
+----------------------------------------------------------------------
+Ran 7 tests in 15.989s
+
+FAILED (errors=7)
+
+================================================================================
+IBI PERFORMANCE TESTING SUITE
+================================================================================
+
+================================================================================
+Performance Test 1: Excel Loading
+================================================================================
+
+  Performance Metrics for 'Excel Loading':
+    Duration: 2.171 seconds
+    Memory used: 0.00 MB
+    Peak memory: 10.60 MB
+
+================================================================================
+Performance Test 2: Data Transformation
+================================================================================
+
+  Performance Metrics for 'Data Transformation':
+    Duration: 0.585 seconds
+    Memory used: 0.00 MB
+    Peak memory: 2.02 MB
+
+================================================================================
+Performance Test 3: Transaction Parsing
+================================================================================
+
+  Performance Metrics for 'Transaction Parsing':
+    Duration: 0.913 seconds
+    Memory used: 0.00 MB
+    Peak memory: 6.82 MB
+
+================================================================================
+Performance Test 4: Portfolio Building
+================================================================================
+
+  Performance Metrics for 'Portfolio Building':
+    Duration: 0.129 seconds
+    Memory used: 0.00 MB
+    Peak memory: 0.14 MB
+
+================================================================================
+Performance Test 5: Complete End-to-End Workflow
+================================================================================
+
+  Performance Metrics for 'Complete Workflow':
+    Duration: 3.055 seconds
+    Memory used: 0.00 MB
+    Peak memory: 7.77 MB
+
+================================================================================
+Performance Test 6: Memory Usage
+================================================================================
+
+  Performance Metrics for 'Memory Usage Test':
+    Duration: 3.434 seconds
+    Memory used: 0.00 MB
+    Peak memory: 7.77 MB
+
+================================================================================
+Scalability Test: Multiple Runs Consistency
+================================================================================
+
+  Running 5 iterations...
+    Run 1: 0.810s
+    Run 2: 0.711s
+    Run 3: 0.858s
+    Run 4: 0.744s
+    Run 5: 0.738s
+
+  Performance Statistics:
+    Average: 0.772s
+    Min: 0.711s
+    Max: 0.858s
+    Variance: 0.147s
+
+================================================================================
+PERFORMANCE TEST SUMMARY
+================================================================================
+Tests run: 7
+Successes: 0
+Failures: 0
+Errors: 7
+Traceback (most recent call last):
+  File "C:\AsusWebStorage\ran@benhur.co\MySyncFolder\python\investingAnalysis\Transaction\tests\integration\test_ibi_performance.py", line 342, in <module>
+    success = run_performance_tests()
+  File "C:\AsusWebStorage\ran@benhur.co\MySyncFolder\python\investingAnalysis\Transaction\tests\integration\test_ibi_performance.py", line 336, in run_performance_tests
+    print("\n\u2717 SOME PERFORMANCE TESTS FAILED")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ranbe\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2717' in position 2: character maps to <undefined>

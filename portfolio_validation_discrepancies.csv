@@ -1,0 +1,32 @@
+﻿symbol,security_name,type,calculated,actual,difference,difference_pct,severity,details
+695437,מזרחי טפחות,missing_in_actual,93.0,,93.0,,high,Position exists in calculated portfolio (93.00 shares) but not found in broker statement
+507012,מיחשוב ישר קב,missing_in_actual,64.0,,64.0,,high,Position exists in calculated portfolio (64.00 shares) but not found in broker statement
+445015,מטריקס,missing_in_actual,209.0,,209.0,,high,Position exists in calculated portfolio (209.00 shares) but not found in broker statement
+288019,סקופ,missing_in_actual,139.0,,139.0,,high,Position exists in calculated portfolio (139.00 shares) but not found in broker statement
+JPM,J.P. MORGAN(JPM,missing_in_actual,22.0,,22.0,,high,Position exists in calculated portfolio (22.00 shares) but not found in broker statement
+MSFT,MICROSOFT(MSFT),missing_in_actual,25.0,,25.0,,high,Position exists in calculated portfolio (25.00 shares) but not found in broker statement
+IBM,INT'L BUSI(IBM),missing_in_actual,11.0,,11.0,,high,Position exists in calculated portfolio (11.00 shares) but not found in broker statement
+99028,B USD/ILS 3.450,missing_in_actual,8100.35,,8100.35,,high,Position exists in calculated portfolio (8100.35 shares) but not found in broker statement
+MAIN,MAIN STREE(MAIN,missing_in_actual,52.0,,52.0,,high,Position exists in calculated portfolio (52.00 shares) but not found in broker statement
+GOOG,GOOG US,missing_in_actual,59.0,,59.0,,high,Position exists in calculated portfolio (59.00 shares) but not found in broker statement
+NVDA,NVIDIA(NVDA),missing_in_actual,43.0,,43.0,,high,Position exists in calculated portfolio (43.00 shares) but not found in broker statement
+TSLA,TESLA MOT(TSLA),missing_in_actual,23.0,,23.0,,high,Position exists in calculated portfolio (23.00 shares) but not found in broker statement
+V,VISA INC (V US),missing_in_actual,24.0,,24.0,,high,Position exists in calculated portfolio (24.00 shares) but not found in broker statement
+1096106,אטראו שוקי הון,missing_in_actual,70.0,,70.0,,high,Position exists in calculated portfolio (70.00 shares) but not found in broker statement
+TPL,TEXAS PACIF(TPL,missing_in_actual,5.0,,5.0,,high,Position exists in calculated portfolio (5.00 shares) but not found in broker statement
+PLTR,PLTR US,missing_in_actual,48.0,,48.0,,high,Position exists in calculated portfolio (48.00 shares) but not found in broker statement
+SCHG,SCHG US,missing_in_actual,33.0,,33.0,,high,Position exists in calculated portfolio (33.00 shares) but not found in broker statement
+1176593,נקסט ויז'ן,missing_in_actual,177.0,,177.0,,high,Position exists in calculated portfolio (177.00 shares) but not found in broker statement
+315010,פמס,missing_in_actual,45.0,,45.0,,high,Position exists in calculated portfolio (45.00 shares) but not found in broker statement
+LB,LB US,missing_in_actual,30.0,,30.0,,high,Position exists in calculated portfolio (30.00 shares) but not found in broker statement
+ASML,ASML HOL(ASML),missing_in_actual,11.0,,11.0,,high,Position exists in calculated portfolio (11.00 shares) but not found in broker statement
+1083955,קווליטאו,missing_in_actual,10.0,,10.0,,high,Position exists in calculated portfolio (10.00 shares) but not found in broker statement
+nan,SCHG US,missing_in_calculated,,33.0,33.0,,high,Position exists in broker statement (33.00 shares) but not in calculated portfolio
+סקופ,סקופ,missing_in_calculated,,139.0,139.0,,high,Position exists in broker statement (139.00 shares) but not in calculated portfolio
+פמס,פמס,missing_in_calculated,,45.0,45.0,,high,Position exists in broker statement (45.00 shares) but not in calculated portfolio
+מטרקס,מטריקס,missing_in_calculated,,209.0,209.0,,high,Position exists in broker statement (209.00 shares) but not in calculated portfolio
+מחשר,מיחשוב ישר קב,missing_in_calculated,,64.0,64.0,,high,Position exists in broker statement (64.00 shares) but not in calculated portfolio
+מזטפ,מזרחי טפחות,missing_in_calculated,,93.0,93.0,,high,Position exists in broker statement (93.00 shares) but not in calculated portfolio
+קלטו,קווליטאו,missing_in_calculated,,10.0,10.0,,high,Position exists in broker statement (10.00 shares) but not in calculated portfolio
+אטרא,אטראו שוקי הון,missing_in_calculated,,70.0,70.0,,high,Position exists in broker statement (70.00 shares) but not in calculated portfolio
+נקסנ,נקסט ויז'ן,missing_in_calculated,,177.0,177.0,,high,Position exists in broker statement (177.00 shares) but not in calculated portfolio

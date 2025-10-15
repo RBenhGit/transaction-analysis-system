@@ -1,0 +1,61 @@
+{
+  "_comment": "Price Fetcher Configuration - Task 16.5",
+
+  "cache": {
+    "ttl_seconds": 600,
+    "ttl_minutes": 10,
+    "tase_ttl_seconds": 3600,
+    "tase_ttl_minutes": 60,
+    "cache_dir": "output/cache",
+    "price_cache_file": "price_cache.json",
+    "manual_price_file": "manual_prices.json"
+  },
+
+  "staleness": {
+    "threshold_seconds": 86400,
+    "threshold_hours": 24,
+    "warn_on_stale": true,
+    "allow_stale_fallback": true
+  },
+
+  "api": {
+    "max_retries": 3,
+    "initial_retry_delay_seconds": 1.0,
+    "max_retry_delay_seconds": 10.0,
+    "request_timeout_seconds": 10,
+    "rate_limit_delay_seconds": 0.5
+  },
+
+  "data_sources": {
+    "primary": {
+      "usd_stocks": "yfinance",
+      "tase_stocks": "tase_yahoo"
+    },
+    "fallback_order": [
+      "manual",
+      "live_api",
+      "cached",
+      "unavailable"
+    ]
+  },
+
+  "currency": {
+    "exchange_rate_api": "https://api.exchangerate-api.com/v4/latest/USD",
+    "default_fallback_rate": 3.6,
+    "rate_cache_ttl_seconds": 3600
+  },
+
+  "monitoring": {
+    "enabled": true,
+    "log_level": "INFO",
+    "track_api_calls": true,
+    "track_cache_hits": true,
+    "track_errors": true
+  },
+
+  "limits": {
+    "max_concurrent_requests": 5,
+    "daily_api_call_limit": 10000,
+    "cache_size_limit_mb": 100
+  }
+}
